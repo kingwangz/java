@@ -1,18 +1,14 @@
 package king1;
 
 public class koing1 {
-
+	static final double PI=3.14;
+	static int age=22;
 	public static void main(String[] args) {
-		char my='k';char myf='*';
-		int p=9303838;int k=342934;
-		char c='\\';char v='\u2605';
-		System.out.println("king wang "+(int)my);
-		System.out.println("king wang "+(int)myf);
-		System.out.println("king wang "+(char)p);
-		System.out.println("king wang "+(char)k);
-		System.out.println("king wang "+(int)k);
-		System.out.println("king wang "+c);
-		System.out.println("king wang "+v);
+		final int number;
+		number=123;
+		age=88;
+		System.out.println("king wang "+age);
+		System.out.println("king wang "+number);
 	}
 
 }
