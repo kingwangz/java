@@ -2,13 +2,11 @@ package king1;
 
 public class koing1 {
 	public static void main(String[] args) {
-		int a,b,c;
+		int a,b;
 		a=4;
-		b=a++;
-		c=++a;
-		System.out.println("king wang "+b);
-		System.out.println("king wang "+c);
-		System.out.println("king wang "+(c<b));
+		b=5;
+		boolean r=((a>b))&&((a!=b));
+		System.out.println("king wang "+r);
 	}
 
 }
