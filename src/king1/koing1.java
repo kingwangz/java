@@ -6,7 +6,9 @@ public class koing1 {
 		a=4;
 		b=5;
 		boolean r=((a>b))&&((a!=b));
+		int c=a<b?8:9;
 		System.out.println("king wang "+r);
+		System.out.println("king wang "+c);
 	}
 
 }
