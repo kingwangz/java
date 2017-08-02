@@ -8,6 +8,7 @@ public class koing1 {
 		c=++a;
 		System.out.println("king wang "+b);
 		System.out.println("king wang "+c);
+		System.out.println("king wang "+(c<b));
 	}
 
 }
