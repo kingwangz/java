@@ -6,8 +6,10 @@ public class koing1 {
 		int ent = 56;
 		if (math > 60) {
 			System.out.println("pass");
-		} else {
+		} else if (math < 30) {
 			System.out.println("not");
+		} else {
+			System.out.println("awsy");
 		}
 		if (ent > 60) {
 			System.out.println("pass");
