@@ -8,5 +8,7 @@ public class koing1 {
 		System.out.println(s);
 		String h = "hello word";
 		System.out.println(h);
+		int size = h.length();
+		System.out.println(size);
 	}
 }
