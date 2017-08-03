@@ -2,24 +2,11 @@ package king1;
 
 public class koing1 {
 	public static void main(String[] args) {
-		String math = "df";
-		int k = 99;
-		switch (k) {
-		case 99:
-			System.out.println("pass");
-			break;
-
-		default:
-			break;
+		int i = 1, s = 0;
+		while (i <= 10) {
+			s = s + i;
+			i++;
 		}
-		switch (math) {
-		case "dd":
-			System.out.println("pass");
-			break;
-
-		default:
-			System.out.println("not");
-			break;
-		}
+		System.out.println("sum=" + s);
 	}
 }
