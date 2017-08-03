@@ -2,12 +2,10 @@ package king1;
 
 public class koing1 {
 	public static void main(String[] args) {
-		int i = 1;
-		while (i < 6) {
-			if (i == 3) {
+		for (int i = 1; i < 20; i++) {
+			if (i % 2 == 0) {
 				continue;
 			}
-			i++;
 			System.out.println(i);
 		}
 	}
