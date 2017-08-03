@@ -5,7 +5,9 @@ public class koing1 {
 		String s = "we are students";
 		int size1 = s.lastIndexOf(" ");
 		int size2 = s.indexOf("a");
+		char k = s.charAt(5);
 		System.out.println(size1);
 		System.out.println(size2);
+		System.out.println(k);
 	}
 }
