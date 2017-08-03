@@ -2,14 +2,14 @@ package king1;
 
 public class koing1 {
 	public static void main(String[] args) {
-		String n = "a";
-		String k = "c";
-		System.out.println(n.compareTo(k));
-		n = "f";
-		System.out.println(n.compareTo(k));
-		String p = n.toUpperCase();
-		String o = p.toLowerCase();
-		System.out.println(p);
-		System.out.println(o);
+		String s = "klk.klk.dff";
+		String[] f = s.split("\\.");
+		String[] k = s.split("\\.", 2);
+		for (String a : f) {
+			System.out.println(a);
+		}
+		for (String a : k) {
+			System.out.println(a);
+		}
 	}
 }
