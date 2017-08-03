@@ -2,14 +2,10 @@ package king1;
 
 public class koing1 {
 	public static void main(String[] args) {
-		int a = 100, b = 100;
-		while (a == 60) {
-			System.out.println("pass");
-			a--;
+		int s = 0;
+		for (int i = 2; i <= 100; i += 2) {
+			s = s + i;
 		}
-		do {
-			System.out.println("pass1");
-			b--;
-		} while (b == 60);
+		System.out.println("sum=" + s);
 	}
 }
