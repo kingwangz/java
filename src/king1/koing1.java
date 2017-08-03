@@ -2,11 +2,18 @@ package king1;
 
 public class koing1 {
 	public static void main(String[] args) {
-		String k = String.format("%d", 400 / 2);
-		String p = String.format("%b", 3 > 5);
-		String l = String.format("%o", 200);
-		System.out.println(k);
-		System.out.println(p);
-		System.out.println(l);
+		String r = "\\w+@\\w+(\\.\\w{2,3})*\\.\\w{2,3}";
+		String a = "aaa@";
+		String a1 = "aaaa";
+		String a2 = "111@qq.com.cn";
+		if (a.matches(r)) {
+			System.out.println("pass1");
+		}
+		if (a1.matches(r)) {
+			System.out.println("pass2");
+		}
+		if (a2.matches(r)) {
+			System.out.println("pass3");
+		}
 	}
 }
