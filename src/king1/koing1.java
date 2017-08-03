@@ -7,5 +7,9 @@ public class koing1 {
 		System.out.println(n.compareTo(k));
 		n = "f";
 		System.out.println(n.compareTo(k));
+		String p = n.toUpperCase();
+		String o = p.toLowerCase();
+		System.out.println(p);
+		System.out.println(o);
 	}
 }
