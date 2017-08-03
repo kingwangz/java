@@ -6,6 +6,7 @@ public class koing1 {
 		long stime = System.currentTimeMillis();
 		for (int i = 0; i < 100000; i++) {
 			d = d + i;
+			System.out.println(d);
 		}
 		long etime = System.currentTimeMillis();
 		long time = etime - stime;
@@ -14,6 +15,7 @@ public class koing1 {
 		stime = System.currentTimeMillis();
 		for (int i = 0; i < 100000; i++) {
 			builder.append(i);
+			System.out.println(builder);
 		}
 		etime = System.currentTimeMillis();
 		time = etime - stime;
