@@ -15,5 +15,7 @@ public class koing1 {
 		System.out.println(s.length());
 		System.out.println(m.length());
 		System.out.println(m);
+		String n = s.replace("w", "W");
+		System.out.println(n);
 	}
 }
