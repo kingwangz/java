@@ -2,19 +2,24 @@ package king1;
 
 public class koing1 {
 	public static void main(String[] args) {
-		int math = 95;
-		int ent = 56;
-		if (math > 60) {
+		String math = "df";
+		int k = 99;
+		switch (k) {
+		case 99:
 			System.out.println("pass");
-		} else if (math < 30) {
-			System.out.println("not");
-		} else {
-			System.out.println("awsy");
+			break;
+
+		default:
+			break;
 		}
-		if (ent > 60) {
+		switch (math) {
+		case "dd":
 			System.out.println("pass");
-		} else {
+			break;
+
+		default:
 			System.out.println("not");
+			break;
 		}
 	}
 }
