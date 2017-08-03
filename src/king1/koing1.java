@@ -17,5 +17,9 @@ public class koing1 {
 		System.out.println(m);
 		String n = s.replace("w", "W");
 		System.out.println(n);
+		boolean b = s.startsWith(" e");
+		boolean b1 = s.endsWith("ts");
+		System.out.println(b);
+		System.out.println(b1);
 	}
 }
