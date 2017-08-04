@@ -5,9 +5,9 @@ import java.util.Arrays;
 public class koing1 {
 	public static void main(String[] args) {
 		int a[] = new int[] { 1, 6, 8, 4, 5 };
-		Arrays.sort(a);
-		for (int i = 0; i < a.length; i++) {
-			System.out.println(a[i]);
+		int n[] = Arrays.copyOf(a, 8);
+		for (int i = 0; i < n.length; i++) {
+			System.out.println(n[i]);
 		}
 	}
 }
