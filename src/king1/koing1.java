@@ -1,31 +1,13 @@
 package king1;
 
+import java.awt.print.Printable;
+
 public class koing1 {
-	static int i = 47;
-
-	public void call() {
-		System.out.println("k");
-		for ( i = 0; i < 3; i++) {
-			System.out.print(i + " ");
-			if (i == 2) {
-				System.out.println("\n");
-			}
-		}
-	}
-
-	// public koing1() {
-	// }
-
 	public static void main(String[] args) {
-		koing1 t1 = new koing1();
-		koing1 t2 = new koing1();
-		t2.i = 60;
-		System.out.println(" " + t1.i++);
-		System.out.println(t1.i);
-		t1.call();
-		System.out.println(i);
-		System.out.println(" " + t2.i);
-		System.out.println(t2.i);
-		t2.call();
+		String c1 = new String();
+		String c2 = new String();
+		String c3 = c1;
+		System.out.println(c2 == c3);
+		System.out.println(c2.equals(c3));
 	}
 }
