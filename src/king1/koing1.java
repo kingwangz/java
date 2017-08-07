@@ -1,7 +1,5 @@
 package king1;
 
-import java.awt.print.Printable;
-
 public class koing1 {
 	public static void main(String[] args) {
 		String c1 = new String();
@@ -9,5 +7,6 @@ public class koing1 {
 		String c3 = c1;
 		System.out.println(c2 == c3);
 		System.out.println(c2.equals(c3));
+		System.gc();
 	}
 }
