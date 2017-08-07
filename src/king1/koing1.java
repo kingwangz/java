@@ -1,28 +1,25 @@
 package king1;
 
 public class koing1 {
-	private String name;
+	static String s = " a ";
 
 	public static void main(String[] args) {
-		koing1 s = new koing1();
-		s.getname();
-		System.out.println(s.getname());
+		koing1 t = new koing1();
+		t.method("111 ");
+		t.method("222 ");
+		t.method("333 ");
+		t.method2();
+		System.out.println(s);
 	}
 
-	public String getname() {
-		int id = 0;
-		setname("java");
-		System.out.println(name);
-		return id + this.name;
-	}
-
-	public void setname(String name) {
-		this.name = name;
-
-	}
-
-	public koing1 nambookname() {
+	public koing1 method(String sb) {
+		s += sb;
 		return this;
-
 	}
+
+	public void method2() {
+
+		System.out.println(s);
+	}
+
 }
