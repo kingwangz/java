@@ -2,11 +2,9 @@ package king1;
 
 public class koing1 {
 	public static void main(String[] args) {
-		int max = Integer.MAX_VALUE;
-		int min = Integer.MIN_VALUE;
-		int ints = Integer.SIZE;
-		System.out.println(max);
-		System.out.println(min);
-		System.out.println(ints);
+		Boolean b1 = new Boolean(true);
+		Boolean b2 = new Boolean("ok");
+		System.out.println(b1.booleanValue());
+		System.out.println(b2.booleanValue());
 	}
 }
