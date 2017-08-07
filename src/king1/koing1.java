@@ -1,11 +1,11 @@
 package king1;
 
 public class koing1 {
-	int i = 47;
+	static int i = 47;
 
 	public void call() {
 		System.out.println("k");
-		for (int i = 0; i < 3; i++) {
+		for ( i = 0; i < 3; i++) {
 			System.out.print(i + " ");
 			if (i == 2) {
 				System.out.println("\n");
@@ -23,7 +23,8 @@ public class koing1 {
 		System.out.println(" " + t1.i++);
 		System.out.println(t1.i);
 		t1.call();
-		System.out.println(" " + t2.i++);
+		System.out.println(i);
+		System.out.println(" " + t2.i);
 		System.out.println(t2.i);
 		t2.call();
 	}
