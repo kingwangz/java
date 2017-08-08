@@ -1,36 +1,22 @@
 package king1;
 
 public class koing1 {
-	public koing1() {
+	koing1() {
+		System.out.println("k");
 	}
-
-	protected void n() {
-	}
-
-	protected koing1 e() {
-		return new koing1();
-	}
-
 	public static void main(String[] args) {
-		koing1 k = new koing1();
-		k.e();
+		koing3 g = new koing3();
 	}
+}
 
-	class koing2 extends koing1 {
-		public koing2() {
-			super();
-			super.n();
-		}
+class koing2 extends koing1 {
+	koing2() {
+		System.out.println("i");
+	}
+}
 
-		public void na() {
-		}
-
-		public void n() {
-		}
-
-		protected koing2 e() {
-			return new koing2();
-		}
-
+class koing3 extends koing2 {
+	koing3() {
+		System.out.println("n");
 	}
 }
