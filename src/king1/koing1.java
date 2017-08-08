@@ -3,10 +3,11 @@ package king1;
 public class koing1 {
 
 	public static void main(String[] args) {
-		System.out.println(Math.exp(2));
-		System.out.println(Math.log(2));
-		System.out.println(Math.sqrt(4));
-		System.out.println(Math.cbrt(8));
-		System.out.println(Math.pow(4, 4));
+		System.out.println("ceil " + Math.ceil(5.2));
+		System.out.println("floor " + Math.floor(5.5));
+		System.out.println("rint " + Math.rint(2.7));
+		System.out.println("rint " + Math.rint(2.5));
+		System.out.println("round " + Math.round(3.4));
+		System.out.println("round " + Math.round(2.5f));
 	}
 }
