@@ -1,23 +1,29 @@
 package king1;
 
 public class koing1 {
-	public void n() {
-		System.out.println("king");
-	}
+	public static void n(koing1 q) {
 
-	public static void a(koing1 q) {
-		q.n();
 	}
 
 	public static void main(String[] args) {
-		k o = new k();
-		a(o);
-		System.out.println("k" + o);
+		koing1 q = new k();
+		if (q instanceof k) {
+			k p = (k) q;
+			System.out.println("k " + p);
+		}
+		if (q instanceof i) {
+			i s = (i) q;
+			System.out.println(s);
+		}
+		System.out.println(q instanceof k);
 	}
+
 }
 
 class k extends koing1 {
-	public void n() {
-		System.out.println("wang");
-	}
+
+}
+
+class i extends koing1 {
+
 }
