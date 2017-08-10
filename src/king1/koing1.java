@@ -1,35 +1,32 @@
 package king1;
 
-import javax.print.DocFlavor.INPUT_STREAM;
-
 public class koing1 {
-	public static int add(int i) {
-		return i;
-	}
+	private koing1[] p = new koing1[6];
+	private int n = 0;
 
-	public static int add(int i, int q) {
-		return i + q;
-	}
-
-	public static double add(double i, int q) {
-		return i + q;
-	}
-
-	public static double add(double i, double q) {
-		return i + q;
-	}
-
-	public static int[] add(int... a) {
-		int s[] = new int[] { 'a' };
-		return s;
+	public void draw(koing1 q) {
+		if (n < p.length) {
+			p[n] = q;
+			System.out.println(n + p.length + q);
+			n++;
+		}
 	}
 
 	public static void main(String[] args) {
-		System.out.println(add(2));
-		System.out.println(add(2.7, 2.3));
-		System.out.println(add(2, 3));
-		System.out.println(add(2.3, 2));
-		System.out.println(add(2));
-		System.out.println(add(1, 2, 34, 5));
+		koing1 q = new koing1();
+		q.draw(new k());
+		q.draw(new sk());
+	}
+}
+
+class sk extends koing1 {
+	public sk() {
+		System.out.println("king");
+	}
+}
+
+class k extends koing1 {
+	public k() {
+		System.out.println("wang");
 	}
 }
