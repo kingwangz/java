@@ -1,19 +1,43 @@
 package king1;
 
 import static java.lang.System.out;
-import java.util.Random;
 
 public class koing1 {
-	private static Random rand = new Random();
-	private final int a = rand.nextInt(10);
-	private static final int a2 = rand.nextInt(10);
 
 	public static void main(String[] args) {
-		koing1 fa = new koing1();
-		out.println(fa.a);
-		out.println(fa.a2);
-		koing1 faa = new koing1();
-		out.println(faa.a);
-		out.println(faa.a2);
+		w o = new W();
+		o.d();
+		k p = o;
+		p.d2();
+		p.d3();
+
+	}
+}
+
+class k {
+	private final void d() {
+		out.println("king");
+	}
+
+	final void d2() {
+		out.println("king2");
+	}
+
+	public void d3() {
+		out.println("king3");
+	}
+}
+
+class w extends k {
+	public final void d() {
+		out.println("wang");
+	}
+
+	/*
+	 * final void d2() { out.println("wang2"); }
+	 */
+
+	public void d3() {
+		out.println("wang3");
 	}
 }
