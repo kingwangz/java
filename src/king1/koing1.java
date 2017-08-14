@@ -3,41 +3,35 @@ package king1;
 import static java.lang.System.out;
 
 public class koing1 {
+	class k {
+		int y = 0;
+
+		k() {
+			out.println("king");
+		}
+
+		public void kin() {
+			out.println("wang");
+		}
+	}
+
+	K in = new K();
+
+	public void ouf() {
+		in.kin();
+	}
+
+	public k doit() {
+		in.y = 4;
+		return new K();
+	}
 
 	public static void main(String[] args) {
-		w o = new W();
-		o.d();
-		k p = o;
-		p.d2();
-		p.d3();
-
-	}
-}
-
-class k {
-	private final void d() {
-		out.println("king");
-	}
-
-	final void d2() {
-		out.println("king2");
-	}
-
-	public void d3() {
-		out.println("king3");
-	}
-}
-
-class w extends k {
-	public final void d() {
-		out.println("wang");
-	}
-
-	/*
-	 * final void d2() { out.println("wang2"); }
-	 */
-
-	public void d3() {
-		out.println("wang3");
+		koing1 out = new koing1();
+		koing1.K i = out.doit();
+		koing1.K i2 = out.new K();
+		System.out.println(i);
+		System.out.println(i2);
+		out.ouf();
 	}
 }
