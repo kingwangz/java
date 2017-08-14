@@ -1,21 +1,13 @@
 package king1;
 
 public class koing1 {
-	public on dot() {
-		return new on() {
-			private int i = 0;
-			public int get() {
-				return i;
-			}
-		};
+	int x=100;
+	static class k{
+		void doit() {
+			System.out.println("king ");
+		}
 	}
-
 	public static void main(String[] args) {
-		koing1 pKoing1 = new koing1();
-		pKoing1.dot();
+		System.out.println("a");
 	}
-}
-
-interface on {
-
 }
