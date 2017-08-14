@@ -1,13 +1,20 @@
 package king1;
 
 public class koing1 {
-	int x=100;
-	static class k{
-		void doit() {
-			System.out.println("king ");
-		}
-	}
 	public static void main(String[] args) {
 		System.out.println("a");
+	}
+	out kOut =new out(null);
+}
+
+class a {
+	class b {
+
+	}
+}
+
+class out extends a.b {
+	public out(a a) {
+		a.super();
 	}
 }
