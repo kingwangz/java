@@ -1,30 +1,22 @@
 package king1;
 
 public class koing1 {
-	private int x;
-
-	private class in {
-		private int x = 9;
-
-		public void doit(int x) {
-			x++;
-			this.x++;
-			koing1.this.x++;
+	public on dot(final String x) {
+		class in implements on {
+			public in(String s) {
+				s = x;
+				System.out.println(s);
+			}
 		}
-	}
-
-	in w = new in();
-
-	public void e() {
-		W.doit(0);
-		System.out.println(+W.x);
+		return new in("dot");
 	}
 
 	public static void main(String[] args) {
-		koing1 p = new koing1();
-		p.e();
-		p.x = 1;
-		System.out.println(+p.x);
-
+		koing1 pKoing1 = new koing1();
+		
+		pKoing1.dot("king");
 	}
+}
+
+interface on {
 }
