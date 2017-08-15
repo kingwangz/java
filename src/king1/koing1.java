@@ -2,19 +2,18 @@ package king1;
 
 public class koing1 {
 	public static void main(String[] args) {
-		System.out.println("a");
-	}
-	out kOut =new out(null);
-}
-
-class a {
-	class b {
-
-	}
-}
-
-class out extends a.b {
-	public out(a a) {
-		a.super();
+		try {
+			String str = "ill";
+			System.out.println(str);
+			int age = Integer.parseInt("20k");
+			System.out.println(age);
+		} catch (Exception e) {
+			e.printStackTrace();
+			e.toString();
+			e.getMessage();
+		}finally {
+			System.out.println("wang");
+		}
+		System.out.println("king");
 	}
 }
