@@ -12,7 +12,7 @@ public class koing1 extends JFrame {
 	public koing1(String tit) {
 		JFrame jf = new JFrame(tit);
 		Container container = jf.getContentPane();
-		JLabel jl = new JLabel("king  dfdf");
+		JLabel jl = new JLabel("king");
 		container.setLayout(null);
 		jl.setHorizontalAlignment(SwingConstants.CENTER);
 		container.add(jl);
