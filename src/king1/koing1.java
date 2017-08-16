@@ -10,11 +10,10 @@ public class koing1 extends JFrame {
 
 	public koing1() {
 		setTitle("king");
-		setLayout(new GridLayout(7, 3, 5, 5));
+		JTextArea ta = new JTextArea(20, 50);
+		JScrollPane sp = new JScrollPane(ta);
 		Container container = getContentPane();
-		for (int i = 0; i < 10; i++) {
-			container.add(new JButton("king" + i));
-		}
+		container.add(sp);
 		setSize(350, 300);
 		setVisible(true);
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
