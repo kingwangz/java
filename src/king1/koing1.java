@@ -1,20 +1,38 @@
 package king1;
 
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.net.*;
 
 import javax.swing.*;
 
 public class koing1 extends JFrame {
 	private static final long serialVersionUID = 1L;
+	String[] borde = new String[] { BorderLayout.CENTER, BorderLayout.NORTH, BorderLayout.SOUTH, BorderLayout.WEST,
+			BorderLayout.EAST };
+	String[] bn = new String[] { "center", "north", "south", "weat", "east" };
 
 	public koing1() {
 		setTitle("king");
-		JTextArea ta = new JTextArea(20, 50);
-		JScrollPane sp = new JScrollPane(ta);
 		Container container = getContentPane();
-		container.add(sp);
-		setSize(350, 300);
+		setLayout(new BorderLayout());
+		for (int i = 0; i < borde.length; i++) {
+			container.add(borde[i], new JButton(bn[i]));
+		}
+		JButton jb = new JButton("center");
+		jb.setMaximumSize(new Dimension(0, 0));
+		jb.setHideActionText(true);
+		jb.setToolTipText("wang");
+		//jb.setBorderPainted(false);
+		jb.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				JOptionPane.showConfirmDialog(null, "k");
+
+			}
+		});
+		container.add(jb);
+		setSize(350, 200);
 		setVisible(true);
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
 	}
