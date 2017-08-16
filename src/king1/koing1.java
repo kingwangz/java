@@ -7,18 +7,15 @@ import javax.swing.*;
 
 public class koing1 extends JFrame {
 	private static final long serialVersionUID = 1L;
-	String[] borde = new String[] { BorderLayout.CENTER, BorderLayout.NORTH, BorderLayout.SOUTH, BorderLayout.WEST,
-			BorderLayout.EAST };
-	String[] bn = new String[] { "center", "north", "south", "weat", "east" };
 
 	public koing1() {
 		setTitle("king");
+		setLayout(new GridLayout(7, 3, 5, 5));
 		Container container = getContentPane();
-		setLayout(new BorderLayout());
-		for (int i = 0; i < borde.length; i++) {
-			container.add(borde[i], new JButton(bn[i]));
+		for (int i = 0; i < 10; i++) {
+			container.add(new JButton("king" + i));
 		}
-		setSize(350, 200);
+		setSize(350, 300);
 		setVisible(true);
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
 	}
