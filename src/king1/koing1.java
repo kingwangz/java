@@ -10,15 +10,12 @@ public class koing1 extends JFrame {
 
 	public koing1() {
 		setTitle("king");
-		setLayout(null);
-		setBounds(0, 0, 200, 150);
 		Container container = getContentPane();
-		JButton b1 = new JButton("1");
-		JButton b2 = new JButton("2");
-		b1.setBounds(10, 30, 80, 30);
-		b2.setBounds(60, 70, 100, 20);
-		container.add(b1);
-		container.add(b2);
+		setLayout(new FlowLayout(2, 10, 10));
+		for (int i = 0; i < 10; i++) {
+			container.add(new JButton("king" + i));
+		}
+		setSize(300, 300);
 		setVisible(true);
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
 	}
