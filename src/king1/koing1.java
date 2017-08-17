@@ -1,42 +1,24 @@
 package king1;
 
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
+
 import java.net.*;
 
 import javax.swing.*;
 
 public class koing1 extends JFrame {
 	private static final long serialVersionUID = 1L;
-	String[] borde = new String[] { BorderLayout.CENTER, BorderLayout.NORTH, BorderLayout.SOUTH, BorderLayout.WEST,
-			BorderLayout.EAST };
-	String[] bn = new String[] { "center", "north", "south", "weat", "east" };
-
 	public koing1() {
-		setTitle("king");
-		Container container = getContentPane();
-		setLayout(new BorderLayout());
-		for (int i = 0; i < borde.length; i++) {
-			container.add(borde[i], new JButton(bn[i]));
-		}
-		JButton jb = new JButton("center");
-		jb.setMaximumSize(new Dimension(0, 0));
-		jb.setHideActionText(true);
-		jb.setToolTipText("wang");
-		//jb.setBorderPainted(false);
-		jb.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				JOptionPane.showConfirmDialog(null, "k");
-
-			}
-		});
-		container.add(jb);
-		setSize(350, 200);
-		setVisible(true);
-		setDefaultCloseOperation(EXIT_ON_CLOSE);
+		JLabel jLabel= new JLabel("king");
+		JFrame  jFrame =new JFrame("k");
+		jLabel.setHorizontalAlignment(SwingConstants.CENTER);
+		jFrame.setVisible(true);
+		jFrame.setSize(250,240);
+		Container container=jFrame.getContentPane();
+		container.add(jLabel);
+		container.setBackground(Color.white);
+		jFrame.setDefaultCloseOperation(EXIT_ON_CLOSE);
 	}
-
 	public static void main(String[] args) {
 		new koing1();
 	}
